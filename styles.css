@@ -10,68 +10,97 @@ body{
 }
 
 .calculator{
-    background: #333;
-    padding: 30px;
-    border-radius: 10px;
-    width: 260px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-}
-
-#display {
-width: 100%;
-height: 50px;
-font-size: 22px;
-text-align: right;
-padding: 10px;
-border: none;
-border-radius: 5px;
-margin-bottom: 15px;
-background: #fff;
-color: #0f0;
-}
-
-.buttons {
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-gap: 10px;
-}
-
-
-button {
-padding: 25px;
-font-size: 20px;
-border: none;
-border-radius: 50%;
-cursor: pointer;
-background: #555;
-color: #fff;
-
-}
-
-button:hover {
-background: #111;
-}
-
-
-.equals {
-background: #0a84ff;
-}
-
-
-.equals:hover {
-background: #0066cc;
+    border: none;
+    width: 400px;;
+    background-color: #333;
+    text-align: center;
+    border-radius: 15px;
+   
 }
 
 h1{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 700;
-    color: #0f0;
-    margin-bottom: 5px;
+    color: blue;
+    padding-bottom: 20px;
 }
 
-@media screen and (max-width: 600px) {
-    #display{
-        height: 30px;
-    }
+input{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #fff;
+    color: #000;
+    text-align: end;
+    font-size: 30px;
+    font-weight: 700;
+}
 
+.button{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+button{
+    font-size: 40px;
+    font-weight: 500;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    
+}
+
+button:hover{
+    background-color: #555;
+}
+
+span{
+    color: blue;
+    box-sizing: border-box;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.clear{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+}
+
+.clear:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.divide,.minus,.plus,.multiply{
+    background-color: blue;
+}
+
+
+/* responsive on mobile */
+
+
+@media only screen and (max-width: 600px) {
+
+    .calculator{
+        width: 350px;
+    }
+    button{
+        font-size: 35px;
+    }
+    input{
+        width: 100%;
+        padding: 30px;
+        margin-bottom: 15px;
+    }
 }
